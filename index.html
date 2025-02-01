@@ -28,6 +28,26 @@
           }
         }
       </script>
+      <style>
+        @keyframes slideFade {
+          0% {
+            opacity: 0;
+            transform: translateY(-20px);
+          }
+          50% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+          100% {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+        }
+    
+        .animate-loop {
+          animation: slideFade 3s ease-in-out infinite;
+        }
+      </style>
 </head>
 <body class="font-sora">
     <header class="bg-green-50 px-4 md:px-28 pt-6 mb-36">
@@ -58,13 +78,16 @@
             </div>
         </nav>
         <!-- Banner Section  -->
-         <div class="text-center text-gray-800">
-            <h1 class="text-3xl md:text-6xl font-bold mb-8 ">Freshness You <span class="text-green-600">Can <br>
-                Count</span> On, Prices You’ll Love!</h1>
-            <p class="text-xl font-light">Shop your daily essentials at unbeatable prices. From fresh produce to pantry
-                <br>staples, we’ve got you covered every day!</p>
-            <img class="mx-auto" src="./assets/hero-vegetables.png" alt="Vegetables" >
-         </div>
+        <div class="text-center text-gray-800">
+            <h1 class="text-3xl md:text-6xl font-bold mb-8 animate-loop">
+              Freshness You <span class="text-green-600">Can <br> Count</span> On, Prices You’ll Love!
+            </h1>
+            <p class="text-xl font-light">
+              Shop your daily essentials at unbeatable prices. From fresh produce to pantry
+              <br>staples, we’ve got you covered every day!
+            </p>
+            <img class="mx-auto" src="./assets/hero-vegetables.png" alt="Vegetables">
+          </div>
     </header>
 
     <!-- Services Section -->
